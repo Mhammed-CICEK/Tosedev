@@ -1,6 +1,6 @@
 using System;
 
-namespace Tosedev.Order.WebAPI
+namespace Tosedev.CustomerAPI
 {
     public class WeatherForecast
     {

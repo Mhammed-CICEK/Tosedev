@@ -4,8 +4,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:26314",
-      "sslPort": 44338
+      "applicationUrl": "http://localhost:54133",
+      "sslPort": 44381
     }
   },
   "profiles": {
@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Tosedev.Order.WebAPI": {
+    "Tosedev.CustomerAPI": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

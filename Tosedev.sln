@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tosedev", "Tosedev\Tosedev.csproj", "{C49CC955-8933-4EC2-B8A5-942B676D8CD7}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tosedev.Core", "Tosedev.Core\Tosedev.Core.csproj", "{D6B4D4A8-3FB1-4851-9D2B-2399B239D543}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tosedev.Common", "Tosedev.Common\Tosedev.Common.csproj", "{1FA5E01E-5D58-48ED-8460-5C6748D5E2E7}"
@@ -17,9 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tosedev.Library", "Tosedev.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tosedev.Data", "Tosedev.Data\Tosedev.Data.csproj", "{85FD6E75-CA6B-4B65-BDD2-5FE0EF267470}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tosede.CostumerWebAPI", "Tosedev.WebAPI\Tosede.CostumerWebAPI.csproj", "{7C6D8FC9-7F80-4E8D-AC02-C356E3F13180}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tosedev.OrderAPI", "Tosedev.OrderAPI\Tosedev.OrderAPI.csproj", "{DA39BD5F-0852-4DB5-BBDC-CD75E37F40F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tosedev.CustomerAPI", "Tosedev.CustomerAPI\Tosedev.CustomerAPI.csproj", "{F8E7EEC5-04D4-4183-80D4-9B52D80A202A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C49CC955-8933-4EC2-B8A5-942B676D8CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C49CC955-8933-4EC2-B8A5-942B676D8CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C49CC955-8933-4EC2-B8A5-942B676D8CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C49CC955-8933-4EC2-B8A5-942B676D8CD7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D6B4D4A8-3FB1-4851-9D2B-2399B239D543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D6B4D4A8-3FB1-4851-9D2B-2399B239D543}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6B4D4A8-3FB1-4851-9D2B-2399B239D543}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -55,14 +49,14 @@ Global
 		{85FD6E75-CA6B-4B65-BDD2-5FE0EF267470}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85FD6E75-CA6B-4B65-BDD2-5FE0EF267470}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85FD6E75-CA6B-4B65-BDD2-5FE0EF267470}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7C6D8FC9-7F80-4E8D-AC02-C356E3F13180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7C6D8FC9-7F80-4E8D-AC02-C356E3F13180}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7C6D8FC9-7F80-4E8D-AC02-C356E3F13180}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7C6D8FC9-7F80-4E8D-AC02-C356E3F13180}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DA39BD5F-0852-4DB5-BBDC-CD75E37F40F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DA39BD5F-0852-4DB5-BBDC-CD75E37F40F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA39BD5F-0852-4DB5-BBDC-CD75E37F40F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA39BD5F-0852-4DB5-BBDC-CD75E37F40F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E7EEC5-04D4-4183-80D4-9B52D80A202A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E7EEC5-04D4-4183-80D4-9B52D80A202A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E7EEC5-04D4-4183-80D4-9B52D80A202A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E7EEC5-04D4-4183-80D4-9B52D80A202A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

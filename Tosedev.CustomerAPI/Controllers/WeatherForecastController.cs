@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Tosedev.Order.WebAPI.Controllers
+namespace Tosedev.CustomerAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]

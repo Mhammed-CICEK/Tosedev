@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Tosedev
+namespace Tosedev.CustomerAPI
 {
     public class Program
     {

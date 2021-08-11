@@ -4,24 +4,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Tosedev.Core;
+using Tosedev.Models;
 
-namespace Tosedev.Order.WebAPI.Controllers
+namespace Tosedev.CustomerAPI.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    public class OrderController : Controller
+    public class CustomerController : Controller
     {
-        private readonly IOrderService _customerService;
+        private readonly ICustomerService _customerService;
         public CustomerController(ICustomerService customerService)
         {
             _customerService = customerService;
         }
-
+        [HttpGet]
         public IActionResult Get()
         {
-            List<Customer> liste = new List<Customer>();
-            liste = _customerService.Get();
-            return Ok(liste);
+
+            List<Customer> customerList = new List<Customer>();
+            customerList = _customerService.Get();
+
+            return Ok(customerList);
+        }
+        [HttpGet("{id}")]
+        public IActionResult Validate(Guid id)
+        {
+
+            return Ok(Validate(id));
         }
         [HttpGet("{id}")]
         public IActionResult get(Guid id)
@@ -41,6 +50,7 @@ namespace Tosedev.Order.WebAPI.Controllers
             var result = _customerService.Update(entity);
             return NoContent();
         }
+
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {

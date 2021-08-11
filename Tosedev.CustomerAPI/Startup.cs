@@ -12,7 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Tosedev.Order.WebAPI
+namespace Tosedev.CustomerAPI
 {
     public class Startup
     {
@@ -30,7 +30,7 @@ namespace Tosedev.Order.WebAPI
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Tosedev.Order.WebAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Tosedev.CustomerAPI", Version = "v1" });
             });
         }
 
@@ -41,7 +41,7 @@ namespace Tosedev.Order.WebAPI
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Tosedev.Order.WebAPI v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Tosedev.CustomerAPI v1"));
             }
 
             app.UseHttpsRedirection();

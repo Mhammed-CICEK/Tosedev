@@ -56,31 +56,20 @@ namespace Tosedev.Data
             return true;
         }
 
-
         public Guid Create(Customer entity)
         {
+            entity.Id = Guid.NewGuid();
+            entity.Adress.AdressId = Guid.NewGuid();
             _dbsetAdress.Add(entity.Adress);
-            entity.AdressId = _dbsetAdress.Where(x => x.AdressId.Equals(entity.Adress.AdressLine)).FirstOrDefault().AdressId;
+            _context.SaveChanges();
+            entity.AdressId = entity.Adress.AdressId;
             _dbset.Add(entity);
             _context.SaveChanges();
             return entity.Id;
-        }
-
-        public List<Customer> orderGet(Guid id)
-        {
-            var customer = _dbset.Where(x => x.Id.Equals(id)).ToList();
-            foreach (var item in customer)
-            {
-                item.Adress = _dbsetAdress.Find(item.AdressId);
-            }
-
-            return customer;
         }
         public bool Validate(Guid id)
         {
             return _dbset.Find(id) != null;
         }
-
-
     }
 }
