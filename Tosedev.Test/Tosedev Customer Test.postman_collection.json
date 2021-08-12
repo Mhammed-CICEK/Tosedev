@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "56b86d33-fb73-4106-859b-7b350933889e",
+		"name": "Tosedev Customer Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44381/api/Customer/Get",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44381",
+					"path": [
+						"api",
+						"Customer",
+						"Get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get(id)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44381/api/Customer/Get/fba17281-ffb1-4070-b6d3-f13e2cbbf6dd",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44381",
+					"path": [
+						"api",
+						"Customer",
+						"Get",
+						"fba17281-ffb1-4070-b6d3-f13e2cbbf6dd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44381/api/Customer/Validate/fba17281-ffb1-4070-b6d3-f13e2cbbf6dd",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44381",
+					"path": [
+						"api",
+						"Customer",
+						"Validate",
+						"fba17281-ffb1-4070-b6d3-f13e2cbbf6dd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Hamza ASLAN\",\r\n        \"email\": \"hamza.aslan@gmail.com\",\r\n        \"createdAt\": \"2021-08-10T00:00:00\",\r\n        \"updatedAt\": \"2021-08-10T00:00:00\",\r\n        \"adress\": {\r\n            \"adressLine\": \"İstanbul/Maltape\",\r\n            \"city\": \"İstanbul\",\r\n            \"country\": \"Turkiye\",\r\n            \"cityCode\": 34400,\r\n            \"customers\": [],\r\n            \"orders\": []\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44381/api/Customer/create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44381",
+					"path": [
+						"api",
+						"Customer",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"fba17281-ffb1-4070-b6d3-f13e2cbbf6dd\",\r\n    \"name\": \"Muhammed Aslan\",\r\n    \"email\": \"muhammed.merdini@hotmail.com\",\r\n    \"adressId\": \"345e19a4-0742-4849-8f50-2372970dc51f\",\r\n    \"createdAt\": \"2021-08-10T00:00:00\",\r\n    \"updatedAt\": \"2021-08-10T00:00:00\",\r\n    \"adress\": {\r\n        \"adressId\": \"345e19a4-0742-4849-8f50-2372970dc51f\",\r\n        \"adressLine\": \"Mardin/Kızıltepe\",\r\n        \"city\": \"Mardin\",\r\n        \"country\": \"Turkiye\",\r\n        \"cityCode\": 47400,\r\n        \"customers\": [],\r\n        \"orders\": []\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44381/api/Customer/update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44381",
+					"path": [
+						"api",
+						"Customer",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44381/api/Customer/delete/f90b01b9-3e83-4217-9820-6ec6a2774e0f",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44381",
+					"path": [
+						"api",
+						"Customer",
+						"delete",
+						"f90b01b9-3e83-4217-9820-6ec6a2774e0f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

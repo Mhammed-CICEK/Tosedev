@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "fc2e74b3-fbee-4228-93d9-62755951704d",
+		"name": "Tosedev Order Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44370/api/order/get",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"api",
+						"order",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get(id)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44370/api/order/get/f717b32e-2e38-49c9-9d59-650b1532d721",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"api",
+						"order",
+						"get",
+						"f717b32e-2e38-49c9-9d59-650b1532d721"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quantity\": 50,\r\n    \"price\": 6.6,\r\n    \"status\": \"Aktif\",\r\n    \"createdAt\": \"2021-06-03T00:00:00\",\r\n    \"updatedAt\": \"2021-08-11T00:00:00\",\r\n    \"adress\": {\r\n        \"adressLine\": \"Istanbul/Maltepe\",\r\n        \"city\": \"Istanbul\",\r\n        \"country\": \"Turkiye\",\r\n        \"cityCode\": 34300,\r\n        \"customers\": [],\r\n        \"orders\": []\r\n    },\r\n    \"product\": {\r\n        \"imageUrl\": \"4.jpg\",\r\n        \"name\": \"Telefon\",\r\n        \"orders\": []\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44370/api/order/create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"api",
+						"order",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"f717b32e-2e38-49c9-9d59-650b1532d721\",\r\n        \"customerId\": \"fba17281-ffb1-4070-b6d3-f13e2cbbf6dd\",\r\n        \"quantity\": 30,\r\n        \"price\": 4.4,\r\n        \"status\": \"Aktif\",\r\n        \"adressId\": \"345e19a4-0742-4849-8f50-2372970dc51f\",\r\n        \"productId\": \"8fde942c-9778-4b0c-a28b-95a940b3a4b4\",\r\n        \"createdAt\": \"2021-08-04T00:00:00\",\r\n        \"updatedAt\": \"2021-04-05T00:00:00\",\r\n        \"adress\": {\r\n            \"adressId\": \"345e19a4-0742-4849-8f50-2372970dc51f\",\r\n            \"adressLine\": \"Mardin/Kızıltepe\",\r\n            \"city\": \"Mardin\",\r\n            \"country\": \"Turkiye\",\r\n            \"cityCode\": 47400,\r\n            \"customers\": [],\r\n            \"orders\": []\r\n        },\r\n        \"product\": {\r\n            \"id\": \"8fde942c-9778-4b0c-a28b-95a940b3a4b4\",\r\n            \"imageUrl\": \"2.PNG\",\r\n            \"name\": \"Leptop\",\r\n            \"orders\": []\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44370/api/order/update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"api",
+						"order",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44370/api/order/delete/d6511bfc-dcfd-49b4-941b-c876f32ca2a3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"api",
+						"order",
+						"delete",
+						"d6511bfc-dcfd-49b4-941b-c876f32ca2a3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ChangeStatus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44370/api/order/update/id=f717b32e-2e38-49c9-9d59-650b1532d721,status=Pasif",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"api",
+						"order",
+						"update",
+						"id=f717b32e-2e38-49c9-9d59-650b1532d721,status=Pasif"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "orderGet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44370/api/order/orderGet/f717b32e-2e38-49c9-9d59-650b1532d721",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"api",
+						"order",
+						"orderGet",
+						"f717b32e-2e38-49c9-9d59-650b1532d721"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
