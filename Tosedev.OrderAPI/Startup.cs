@@ -33,19 +33,14 @@ namespace Tosedev.OrderAPI
         {
             services.AddDbContext<AppDBContext>(options =>
               options.UseSqlServer(Configuration.GetConnectionString("sqlBaglanti")));
-
-            services.AddTransient(typeof(IService<>), typeof(Service<>));
-            services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
             services.AddTransient<ICustomerService, CustomerService>();
             services.AddTransient<ICustomerRepository, CustomerRepository>();
             services.AddTransient<IOrderService, OrderService>();
             services.AddTransient<IOrderRepository, OrderRepository>();
             services.AddControllers();
 
-            services.AddControllersWithViews()
-    .AddNewtonsoftJson(options =>
-    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-);
+            services.AddControllersWithViews().AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
             services.AddSwaggerGen(c =>
             {

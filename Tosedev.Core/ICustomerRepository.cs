@@ -7,7 +7,7 @@ using Tosedev.Models;
 
 namespace Tosedev.Core
 {
-    public interface ICustomerRepository:IRepository<Customer>
+    public interface ICustomerRepository
     {
         bool Update(Customer entity);
         bool Delete(Guid id);

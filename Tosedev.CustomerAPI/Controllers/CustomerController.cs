@@ -29,8 +29,8 @@ namespace Tosedev.CustomerAPI.Controllers
         [HttpGet("{id}")]
         public IActionResult Validate(Guid id)
         {
-
-            return Ok(Validate(id));
+            
+            return Ok(_customerService.Validete(id));
         }
         [HttpGet("{id}")]
         public IActionResult get(Guid id)

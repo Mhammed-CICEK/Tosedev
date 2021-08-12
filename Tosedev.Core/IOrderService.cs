@@ -7,7 +7,7 @@ using Tosedev.Models;
 
 namespace Tosedev.Core
 {
-    public interface IOrderService:IService<Order>
+    public interface IOrderService
     {
         bool Update(Order entity);
         bool Delete(Guid id);
